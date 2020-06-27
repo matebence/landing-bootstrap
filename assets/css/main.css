@@ -73,7 +73,7 @@ header ul#account-links > li {
 }
 
 header ul#account-links > li > a {
-    text-transform: capitalize;
+    text-transform: inherit;
     border: solid 0.09rem #7f7f7f;
     border-radius: 0.5rem;
     color: #176c9d;
@@ -379,7 +379,7 @@ section#banner ul > li > p {
 section#banner ul > li > a {
     font-family: Palanquin-Medium, sans-serif;
     font-size: 1.3em;
-    text-transform: capitalize;
+    text-transform: inherit;
     border: solid 0.1rem #ffffff;
     border-radius: 0.5rem;
     color: #ffffff;
