@@ -3,4 +3,4 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-CMD ["npm", "run", "start-server"]
+CMD ["./wait-for-it.sh" , "tracking-server:9411" , "--strict" , "--timeout=360" , "--" , "npm", "run", "start-server"]
