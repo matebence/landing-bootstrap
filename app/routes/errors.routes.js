@@ -1,5 +1,8 @@
 module.exports = app => {
-    app.get('*', (req, res) => {
-        res.render('error');
-    });
+    const router = require("express").Router();
+    const error = require("../controllers/errors.controller");
+
+    router.get("*", error.notFound.render);
+
+    app.use('*', router);
 };
