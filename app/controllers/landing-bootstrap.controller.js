@@ -7,24 +7,24 @@ exports.home = {
 };
 exports.signIn = {
     redirect: (req, res, next) => {
-        if (mobile()) {
-            res.redirect(global.config.get('node.mobile.signin'));
-        } else {
-            res.redirect(global.config.get('node.desktop.signup'));
-        }
+        if (!mobile()) res.redirect((req.protocol + '://' + req.get('host') + req.originalUrl).replace(req.get('host'), global.config.get('node.mobile.host')));
+        res.redirect((req.protocol + '://' + req.get('host') + req.originalUrl).replace(req.get('host'), global.config.get('node.desktop.host')));
     }
 };
 exports.signUp = {
     redirect: (req, res, next) => {
-        if (mobile()) {
-            res.redirect(global.config.get('node.mobile.signup'));
-        } else {
-            res.redirect(global.config.get('node.desktop.signup'));
-        }
+        if (!mobile()) res.redirect((req.protocol + '://' + req.get('host') + req.originalUrl).replace(req.get('host'), global.config.get('node.mobile.host')));
+        res.redirect((req.protocol + '://' + req.get('host') + req.originalUrl).replace(req.get('host'), global.config.get('node.desktop.host')));
+    }
+};
+exports.forgetPassword = {
+    redirect: (req, res, next) => {
+        if (!mobile()) res.redirect((req.protocol + '://' + req.get('host') + req.originalUrl).replace(req.get('host'), global.config.get('node.mobile.host')));
+        res.redirect((req.protocol + '://' + req.get('host') + req.originalUrl).replace(req.get('host'), global.config.get('node.desktop.host')));
     }
 };
 exports.manage = {
     redirect: (req, res, next) => {
-        res.redirect(global.config.get('node.desktop.manage'));
+        res.redirect((req.protocol + '://' + req.get('host') + req.originalUrl).replace(req.get('host'), global.config.get('node.management.host')));
     }
 };
