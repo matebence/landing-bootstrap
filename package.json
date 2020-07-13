@@ -24,16 +24,15 @@
     "url": "https://github.com/matebence/landing-bootstrap/issues"
   },
   "homepage": "https://github.com/matebence/landing-bootstrap#readme",
-  "devDependencies": {
-    "lite-server": "^2.5.4",
-    "nodemon": "^2.0.4"
-  },
   "dependencies": {
-    "cloud-config-client": "^1.5.2",
     "cors": "^2.8.5",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "is-mobile": "^2.2.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "nodemon": "^2.0.4"
   }
 }
