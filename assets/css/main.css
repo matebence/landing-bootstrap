@@ -1,6 +1,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #176c9d;
+}
+
 html {
     scroll-behavior: smooth;
     -webkit-touch-callout: none;
