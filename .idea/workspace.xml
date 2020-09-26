@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82d7700c-f748-4315-a95c-a5e31c90260f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/lading-bootstrap.routes.js" afterPath="$PROJECT_DIR$/app/routes/lading-bootstrap.routes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,7 +29,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>data</find>
       <find>count</find>
       <find>bg</find>
       <find>node_modules</find>
@@ -58,6 +58,7 @@
       <find>path</find>
       <find>sign</find>
       <find>:4300</find>
+      <find>:80</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;#&quot;</replace>
@@ -75,6 +76,7 @@
       <replace>.servers.management</replace>
       <replace>/sign-up</replace>
       <replace>:80</replace>
+      <replace>:4300</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -374,12 +376,13 @@
       <workItem from="1593249197617" duration="33020000" />
       <workItem from="1593339227795" duration="6495000" />
       <workItem from="1594649317189" duration="1297000" />
-      <workItem from="1601137742020" duration="1541000" />
+      <workItem from="1601137742020" duration="1795000" />
+      <workItem from="1601144300820" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82746000" />
+    <option name="totallyTimeSpent" value="83017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1929" y="-9" width="1938" height="1098" extended-state="6" />
@@ -418,7 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="4476" column="29" lean-forward="true" selection-start-line="4476" selection-start-column="29" selection-end-line="4476" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="26" column="3" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="34" column="12612" lean-forward="false" selection-start-line="34" selection-start-column="12612" selection-end-line="34" selection-end-column="12612" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,14 +714,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/lading-bootstrap.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="99">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding />
         </state>
       </provider>
