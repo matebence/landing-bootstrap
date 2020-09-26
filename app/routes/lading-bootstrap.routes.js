@@ -10,6 +10,7 @@ module.exports = app => {
     router.use("/*.*", createProxyMiddleware({
         target: 'http://localhost/',
         changeOrigin: true,
+        ws: true,
         pathRewrite: {
             [`^/`]: ''
         },
