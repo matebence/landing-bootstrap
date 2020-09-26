@@ -19,7 +19,7 @@ module.exports = app => {
             } else if (mobile()) {
                 return 'http://pwa-react:4200/';
             } else {
-                return 'http://web-vue:4300/';
+                return 'http://web-vue:80/';
             }
         }
     }));
@@ -42,7 +42,7 @@ module.exports = app => {
             if (mobile()) {
                 return 'http://pwa-react:4200/';
             } else {
-                return 'http://web-vue:4300/';
+                return 'http://web-vue:80/';
             }
         }
     }));
@@ -57,7 +57,7 @@ module.exports = app => {
             if (mobile()) {
                 return 'http://pwa-react:4200/';
             } else {
-                return 'http://web-vue:4300/';
+                return 'http://web-vue:80/';
             }
         }
     }));
@@ -72,7 +72,7 @@ module.exports = app => {
             if (mobile()) {
                 return 'http://pwa-react:4200/';
             } else {
-                return 'http://web-vue:4300/';
+                return 'http://web-vue:80/';
             }
         }
     }));
@@ -87,7 +87,7 @@ module.exports = app => {
             if (mobile()) {
                 return 'http://pwa-react:4200/';
             } else {
-                return 'http://web-vue:4300/';
+                return 'http://web-vue:80/';
             }
         }
     }));
@@ -102,7 +102,7 @@ module.exports = app => {
             if (mobile()) {
                 return 'http://pwa-react:4200/';
             } else {
-                return 'http://web-vue:4300/';
+                return 'http://web-vue:80/';
             }
         }
     }));
