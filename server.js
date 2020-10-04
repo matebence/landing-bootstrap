@@ -19,7 +19,8 @@ app.use(cors());
 global.appRoot = path.resolve(__dirname);
 global.config = node;
 
-require("./app/routes/lading-bootstrap.routes")(app);
+require("./app/routes/lading.routes")(app);
+require("./app/routes/proxy.routes")(app);
 require("./app/routes/errors.routes")(app);
 
 app.listen(node.server.port, () => {
