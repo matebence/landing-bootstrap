@@ -36,7 +36,7 @@ exports.assetsRouter = () => {
             [`^/`]: ''
         },
         router: function (req) {
-            if (!mobile() && req.headers.referer === global.config.proxy.management) {
+            if (!mobile() && req.headers.referer.split("/").includes("manage")) {
                 return global.config.proxy.management;
             } else if (mobile()) {
                 return global.config.proxy.mobile;
