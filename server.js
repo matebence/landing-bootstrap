@@ -21,7 +21,6 @@ global.config = node;
 
 require('./app/routes/lading.routes')(app);
 require('./app/routes/proxy.routes')(app);
-require('./app/routes/errors.routes')(app);
 
 app.listen(node.server.port, () => {
     console.log(`Server beží na porte ${node.server.port}`)
