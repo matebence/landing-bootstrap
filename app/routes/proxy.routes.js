@@ -1,5 +1,5 @@
 module.exports = app => {
-    const { clientRouter, adminRouter, assetsRouter } = require('../proxys/proxy.config');
+    const {clientRouter, adminRouter, assetsRouter} = require('../proxys/proxy.config');
     const {createProxyMiddleware} = require('http-proxy-middleware');
     const router = require("express").Router();
 
