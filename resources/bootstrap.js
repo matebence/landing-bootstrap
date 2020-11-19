@@ -1,9 +1,9 @@
 module.exports = {
     application: {
-        name: "landing-bootstrap"
+        name: 'landing-bootstrap'
     },
     profiles: {
-        active: "dev"
+        active: 'dev'
     },
     proxy: {
         default: process.env.DEFAULT_SERVER,
