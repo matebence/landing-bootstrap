@@ -1,8 +1,8 @@
 const node = require('./resources/bootstrap');
 const express = require('express');
-const morgan = require("morgan");
+const morgan = require('morgan');
 const helmet = require('helmet');
-const cors = require("cors");
+const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 
@@ -19,9 +19,9 @@ app.use(cors());
 global.appRoot = path.resolve(__dirname);
 global.config = node;
 
-require("./app/routes/lading.routes")(app);
-require("./app/routes/proxy.routes")(app);
-require("./app/routes/errors.routes")(app);
+require('./app/routes/lading.routes')(app);
+require('./app/routes/proxy.routes')(app);
+require('./app/routes/errors.routes')(app);
 
 app.listen(node.server.port, () => {
     console.log(`Server beží na porte ${node.server.port}`)

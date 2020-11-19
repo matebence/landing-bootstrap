@@ -1,21 +1,26 @@
 module.exports = app => {
-    const {clientRouter, adminRouter, assetsRouter} = require('../proxys/proxy.config');
     const {createProxyMiddleware} = require('http-proxy-middleware');
-    const router = require("express").Router();
+    const router = require('express').Router();
+    const mobile = require('is-mobile');
 
-    router.use("/*.*", createProxyMiddleware(assetsRouter()));
-
-    router.get("/manage", createProxyMiddleware(adminRouter()));
-
-    router.get("/sign-in", createProxyMiddleware(clientRouter()));
-
-    router.get("/sign-up", createProxyMiddleware(clientRouter()));
-
-    router.get("/sign-up/account/:id/token/:key", createProxyMiddleware(clientRouter()));
-
-    router.get("/forget-password", createProxyMiddleware(clientRouter()));
-
-    router.get("/forget-password/account/:id/token/:key", createProxyMiddleware(clientRouter()));
+    router.use('/**', createProxyMiddleware({
+            target: global.config.proxy.default,
+            changeOrigin: true,
+            ws: true,
+            pathRewrite: {
+                [`^/`]: ''
+            },
+            router: function (req) {
+                if (!mobile() && req.originalUrl.split('/').includes('manage')) {
+                    return global.config.proxy.management;
+                } else if (!mobile() && req.originalUrl.split('/').includes('desktop')) {
+                    return global.config.proxy.desktop;
+                } else {
+                    return global.config.proxy.mobile;
+                }
+            }
+        }
+    ));
 
     app.use('/', router);
 };
