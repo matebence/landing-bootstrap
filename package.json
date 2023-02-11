@@ -34,7 +34,7 @@
     "http-proxy-middleware": "^1.0.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.20",
     "lite-server": "^2.5.4"
   }
 }
